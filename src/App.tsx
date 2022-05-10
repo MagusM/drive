@@ -1,25 +1,24 @@
 import './App.css'
 import React from "react";
-
-
-import { HomePage } from './app/containers/index';
 import styled from "styled-components";
 import tw from "twin.macro";
+import { HomePage } from './app/containers/index';
 
-
-const SomeDiv = styled.div`
-    width: 100px;
-    height: 100px;
-    ${tw`bg-black`}
+const AppContainer = styled.div`
+    ${tw`
+        h-full 
+        w-full 
+        w-full 
+        flex 
+        flex-col
+    `}
 `;
 
 const App: React.FC = () => {
     return (
-
-        <div className="h-full w-full w-full flex flex-col">
-            <SomeDiv>s</SomeDiv>
+        <AppContainer>
             <HomePage></HomePage>
-        </div>
+        </AppContainer>
     );
 }
 
