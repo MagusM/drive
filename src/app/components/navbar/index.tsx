@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { Logo } from '../index';
+import NavItems  from "./navItems";
 
-const NavvarContainer = styled.div`
+
+const NavbarContainer = styled.div`
     min-height: 68px;
     ${tw`
         w-full
-        max-w-2xl
+        max-w-screen-2xl
         flex
         flex-row
         items-center
@@ -23,11 +25,12 @@ const LogoContainer = styled.div`
 
 const Navbar: React.FC = () => {
     return (
-        <NavvarContainer>
+        <NavbarContainer>
             <LogoContainer>
                 <Logo></Logo>
             </LogoContainer>
-        </NavvarContainer>
+            <NavItems></NavItems>
+        </NavbarContainer>
     )
 }
 
