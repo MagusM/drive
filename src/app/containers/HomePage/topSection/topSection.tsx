@@ -3,7 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import MclarenCarImg from "/src/assets/images/mclaren-orange-big.png";
 import BlobImg from "/src/assets/images/blob.svg";
-import {SCREENS} from "../../../components";
+import { SCREENS, Button } from "../../../components";
 
 const TopSectionContainer = styled.div`
   min-height: 600px;
@@ -157,6 +157,11 @@ const TopSection: React.FC = () => {
                     Always choose the best car from our local dealers or order it remotely
                     at the best price for you and get the best quality cars with best prices at the market.
                 </Description>
+                <ButtonsContainer>
+                    <Button text="Buy Your Ride" />
+                    <Button theme="filled" text="Sell Your Car" />
+                </ButtonsContainer>
+
             </LeftContainer>
             <RightContainer>
                 <BlobContainer>
