@@ -6,11 +6,11 @@ import TopSection from "./topSection/topSection";
 
 const PageContainer = styled.div`
   ${tw`
-    flex 
-    flex-col 
-    w-full 
-    h-full 
-    items-center 
+    flex
+    flex-col
+    w-full
+    h-full
+    items-center
     overflow-x-hidden
   `}
 `;
@@ -18,8 +18,8 @@ const PageContainer = styled.div`
 const HomePage: React.FC = () => {
     return (
         <PageContainer>
-            <Navbar></Navbar>
-            <TopSection></TopSection>
+            <Navbar />
+            <TopSection />
         </PageContainer>
     )
 }

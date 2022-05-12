@@ -19,17 +19,15 @@ const NavbarContainer = styled.div`
     `}
 `;
 
-const LogoContainer = styled.div`
-  
-`;
+const LogoContainer = styled.div``;
 
 const Navbar: React.FC = () => {
     return (
         <NavbarContainer>
             <LogoContainer>
-                <Logo></Logo>
+                <Logo />
             </LogoContainer>
-            <NavItems></NavItems>
+            <NavItems />
         </NavbarContainer>
     )
 }

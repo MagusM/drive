@@ -3,10 +3,11 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import MclarenCarImg from "/src/assets/images/mclaren-orange-big.png";
 import BlobImg from "/src/assets/images/blob.svg";
+import {SCREENS} from "../../../components";
 
 const TopSectionContainer = styled.div`
-  min-height: 400px;
-  margin-top: 6rem;
+  min-height: 600px;
+  margin-top: 6em;
   ${tw`
     w-full
     max-w-screen-2xl
@@ -16,7 +17,7 @@ const TopSectionContainer = styled.div`
     pr-3
     lg:pl-12
     lg:pr-12
-  `}
+  `};
 `;
 
 const LeftContainer = styled.div`
@@ -24,7 +25,7 @@ const LeftContainer = styled.div`
     w-1/2
     flex
     flex-col
-  `}
+  `};
 `;
 
 const RightContainer = styled.div`
@@ -34,7 +35,7 @@ const RightContainer = styled.div`
     flex-col
     relative
     mt-20
-  `}
+  `};
 `;
 
 const Slogan = styled.h1`
@@ -51,7 +52,7 @@ const Slogan = styled.h1`
     sm:leading-snug
     lg:leading-normal
     xl:leading-relaxed
-  `}
+  `};
 `;
 
 const Description = styled.p`
@@ -63,7 +64,7 @@ const Description = styled.p`
     overflow-hidden
     max-h-12
     text-gray-800
-  `}
+  `};
 `;
 
 const BlobContainer = styled.div`
@@ -74,11 +75,35 @@ const BlobContainer = styled.div`
   top: -9em;
   z-index: -1;
   transform: rotate(-30deg);
-  
+
   img {
     width: 100%;
     height: auto;
     max-height: max-content;
+  }
+
+  @media (min-width: ${SCREENS.sm}) {
+    width: 40em;
+    max-height: 10em;
+    right: -9em;
+    top: -16em;
+    transform: rotate(-25deg);
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    width: 50em;
+    max-height: 30em;
+    right: -7em;
+    top: -15em;
+    transform: rotate(-30deg);
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    width: 70em;
+    max-height: 30em;
+    right: -15em;
+    top: -25em;
+    transform: rotate(-20deg);
   }
 `;
 
@@ -88,12 +113,38 @@ const StandaloneCar = styled.div`
   right: -6em;
   top: -5em;
   position: absolute;
-  
+
   img {
     width: auto;
     height: 100%;
     max-width: fit-content;
   }
+
+  @media (min-width: ${SCREENS.sm}) {
+    height: 16em;
+    right: -6em;
+    top: -6em;
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    height: 21em;
+    right: -8em;
+    top: -5em;
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    height: 30em;
+    right: -13em;
+    top: -9em;
+  }
+`;
+
+const ButtonsContainer = styled.div`
+  ${tw`
+    flex
+    flex-wrap
+    mt-4
+  `};
 `;
 
 const TopSection: React.FC = () => {
@@ -101,7 +152,7 @@ const TopSection: React.FC = () => {
     return (
         <TopSectionContainer>
             <LeftContainer>
-                <Slogan>Buy The Best Quality Cars With Us</Slogan>
+                <Slogan>Find & Buy The Best Quality Cars With Us</Slogan>
                 <Description>
                     Always choose the best car from our local dealers or order it remotely
                     at the best price for you and get the best quality cars with best prices at the market.

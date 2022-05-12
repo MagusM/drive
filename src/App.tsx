@@ -8,7 +8,6 @@ const AppContainer = styled.div`
     ${tw`
         h-full 
         w-full 
-        w-full 
         flex 
         flex-col
     `}
@@ -17,7 +16,7 @@ const AppContainer = styled.div`
 const App: React.FC = () => {
     return (
         <AppContainer>
-            <HomePage></HomePage>
+            <HomePage />
         </AppContainer>
     );
 }
