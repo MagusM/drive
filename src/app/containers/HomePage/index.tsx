@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Navbar } from "../../components";
+import {BookCard, Marginer, Navbar} from "../../components";
 import TopSection from "./topSection/topSection";
 
 const PageContainer = styled.div`
@@ -20,6 +20,8 @@ const HomePage: React.FC = () => {
         <PageContainer>
             <Navbar />
             <TopSection />
+            <Marginer direction="vertical" margin="4em" />
+            <BookCard />
         </PageContainer>
     )
 }
