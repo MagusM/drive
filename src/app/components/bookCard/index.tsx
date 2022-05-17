@@ -77,17 +77,19 @@ const LineSeperator = styled.span`
   `}
 `;
 
-const DatesCalendar = styled(Calendar)`
-  max-width: none;
+const DateCalendar = styled(Calendar)`
   position: absolute;
+  max-width: none;
   user-select: none;
   top: 2em;
   left: 0;
-  
-  ${({offset}: any) => offset && css`
-    left: -6em;
-  `}
-  
+
+  ${({ offset }: any) =>
+          offset &&
+          css`
+            left: -6em;
+          `};
+
   @media (min-width: ${SCREENS.md}) {
     top: 3.5em;
     left: -2em;
@@ -125,7 +127,7 @@ const BookCard = () => {
                 <SmallIcon>
                     <FontAwesomeIcon icon={isStartCalendarOpen ? faCaretUp : faCaretDown} />
                 </SmallIcon>
-                {isStartCalendarOpen && <DatesCalendar value={startDate} onChange={setStartDate} />}
+                {isStartCalendarOpen && <DateCalendar value={startDate} onChange={setStartDate} />}
             </ItemContainer>
             <LineSeperator />
             <ItemContainer>
@@ -136,7 +138,7 @@ const BookCard = () => {
                 <SmallIcon>
                     <FontAwesomeIcon icon={isReturnCalendarOpen ? faCaretUp : faCaretDown} />
                 </SmallIcon>
-                {isReturnCalendarOpen && <DatesCalendar offset value={returnDate} onChange={setReturnDate} />}
+                {isReturnCalendarOpen && <DateCalendar offset value={returnDate} onChange={setReturnDate} />}
             </ItemContainer>
             <Marginer margin="2em" direction="horizontal" />
             <Button text="Get Your Ride " />
