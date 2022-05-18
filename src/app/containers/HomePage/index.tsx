@@ -1,5 +1,5 @@
 
-import {BookCard, Marginer, Navbar} from "../../components";
+import {BookCard, Footer, Marginer, Navbar} from "../../components";
 import TopSection from "./topSection/topSection";
 import BookingSteps from "./bookingSteps";
 import AboutUs from "./aboutUs";
@@ -32,6 +32,8 @@ const HomePage: React.FC = () => {
             <AboutUs />
             <Marginer direction="vertical" margin="8em" />
             <TopCars />
+            <Marginer direction="vertical" margin="8em" />
+            <Footer />
         </PageContainer>
     )
 }

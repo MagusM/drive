@@ -89,16 +89,14 @@ const AboutUs = () => {
             <InfoContainer>
                 <Title>Feel The Best Experience With Our Car Dealers</Title>
                 <InfoText>
-                    Drive is working with the best car dealers in the country. <br />
-                    We will be with in all the process helping you find your the best car for you.<br />
-                    We will insure you will have the best experience buying your next car.<br />
-                    We will Help you with the best loan for your next car with few clicks.<br />
-                    We will handle car delivery to you, so your new car will come to you.<br />
-                    Drive is working with the best car dealers in the country. <br />
-                    We will be with in all the process helping you find your the best car for you.<br />
-                    We will insure you will have the best experience buying your next car.<br />
-                    We will Help you with the best loan for your next car with few clicks.<br />
-                    We will handle car delivery to you, so your new car will come to you.
+                    Your perfect car, one click away! <br />
+                    You might be thinking “I need to buy a new car”, <br />
+                    but do you have the time? <br />
+                    Are you conducting the right checks at the dealership? <br />
+                    With One Click Cars, <br />
+                    you can buy or finance a car online, hassle-free, from the comfort of your home. <br />
+                    If you don’t fall in love with the car for whatever reason, <br />
+                    you can exchange or return it within 14 days for a full refund.
                 </InfoText>
             </InfoContainer>
         </AboutUsContainer>
