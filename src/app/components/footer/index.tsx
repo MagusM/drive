@@ -38,6 +38,7 @@ const BottomContainer = styled.div`
     md:justify-start
     mt-7
     md:mt-1
+    mb-2
   `};
 `;
 
